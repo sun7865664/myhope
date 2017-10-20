@@ -1,0 +1,33 @@
+{
+  "name": "node-web-demo",
+  "version": "1.0.0",
+  "description": "a web project of node.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "node.js"
+  ],
+  "author": "sunlong",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.5.0",
+    "body-parser": "^1.17.2",
+    "ejs": "^2.5.6",
+    "express": "^4.15.3",
+    "express-session": "^1.15.3",
+    "logger-node": "git://github.com/gfound/logger-node.git#1.0.3",
+    "multer": "^1.3.0",
+    "mysql": "^2.13.0",
+    "node-schedule": "^1.2.3",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1"
+  }
+}
