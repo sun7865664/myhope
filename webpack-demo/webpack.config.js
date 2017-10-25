@@ -51,6 +51,11 @@ module.exports = {
           emitWarning: true,
         },
       },
+      /* 用来解析vue后缀的文件 */
+      {
+        test: /\.vue$/,
+        loader: 'vue-loader'
+      },
       {
         test: /\.css$/,
         exclude: /node_modules/,
