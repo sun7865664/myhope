@@ -27,6 +27,8 @@
     "webpack-dev-server": "^2.9.2"
   },
   "dependencies": {
+    "chimee": "^0.4.2",
+    "fs": "0.0.1-security",
     "vue": "^2.5.2"
   }
 }

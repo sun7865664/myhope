@@ -13,6 +13,7 @@
         items: [
           { message: 'Foo' },
           { message: 'Bar' },
+          { message: 'something' },
         ],
       }
     },

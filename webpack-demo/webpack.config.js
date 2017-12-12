@@ -5,6 +5,8 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const BabiliPlugin = require('babili-webpack-plugin');
 const webpack = require('webpack');
 
+const opn = require('opn');
+
 const PATHS = {
   app: path.join(__dirname, 'app'),
   build: path.join(__dirname, 'build'),
@@ -24,6 +26,11 @@ module.exports = {
       warnings: true,
     },
     hotOnly: true,
+    after: function(app) {
+      var uri = 'http://localhost:' + 9090
+      console.log('\x1B[36m%s\x1b[0m', '> Listening at ' + uri + '\n')
+      opn(uri)
+    }
   },
   devtool: 'source-map',
   performance: {
@@ -54,7 +61,7 @@ module.exports = {
       /* 用来解析vue后缀的文件 */
       {
         test: /\.vue$/,
-        loader: 'vue-loader'
+        loader: 'vue-loader',
       },
       {
         test: /\.css$/,
